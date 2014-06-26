@@ -3,6 +3,8 @@ if has("syntax")
 	set hlsearch
 endif
 
+colorscheme ron
+
 set bg=dark " set default background to black
 set ts=4	" set tab stop to 4 characters
 set sw=4	" set shift width to 4 characters
