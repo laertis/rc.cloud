@@ -3,6 +3,12 @@ if has("syntax")
 	set hlsearch
 endif
 
+" last-position-jump
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+		\|exe "normal! g`\"" | endif
+endif
+
 colorscheme ron
 
 set bg=dark " set default background to black
